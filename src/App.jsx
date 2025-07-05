@@ -46,6 +46,14 @@ function App() {
     newStudents.splice(index,1)
     setallStudents(newStudents)
   }
+
+  const editStudent=(index, student)=>{
+    console.log(index)
+
+    let newStudents = [...allStudents]
+    newStudents.splice(index,1, student)
+    setallStudents(newStudents);
+  }
   
 
   return (
@@ -68,7 +76,7 @@ function App() {
       
 
     <AddStudent saveStudents={saveStudents}/>
-    <DisplayStudent allStudents={allStudents} deleteStudent={deleteStudent}/>
+    <DisplayStudent allStudents={allStudents} deleteStudent={deleteStudent} editStudent={editStudent}/>
     </>
   );
 }
