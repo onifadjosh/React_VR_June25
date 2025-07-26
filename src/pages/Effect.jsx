@@ -7,9 +7,9 @@ const Effect = () => {
         console.log('I ran oooooo')
     }, [number, namee])
 
-    //useeffect without dependency array, onload will run and when any state chnages will still run
-    //use effect with empty dependency array onload will run and when state chnages won't run
-    //use effect with state in the dependency array
+    //useeffect without dependency array, onload will run and when any state changes will still run
+    //use effect with empty dependency array onload will run and when state changes won't run
+    //use effect with state in the dependency array onload will run and when the state changes it will run again
 
     // useEffect(() => {
     //   first
